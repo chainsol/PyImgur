@@ -1082,7 +1082,7 @@ class Imgur:
 
     def is_imgur_url(self, url):
         """Is the given url a valid Imgur url?"""
-        return re.match("(http://)?(www\.)?imgur\.com", url, re.I) is not None
+        return re.match("(https?://)?(www\.)?(i\.)?imgur\.com", url, re.I) is not None
 
     def refresh_access_token(self):
         """
